@@ -1,0 +1,55 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:npt3basic/Resources/Public/Images/logo.svg
+        fileInverted = EXT:npt3basic/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = npt3basic
+        linktitle = npt3basic
+    }
+    favicon {
+        file = EXT:npt3basic/Resources/Public/Icons/favicon.png
+    }
+     preloader {
+        enable = 0
+    }
+    theme {
+        cookieconsent {
+            # cat=bootstrap package: cookie consent/240/01_enable; type=boolean; label=Enable Cookie Consent: For more information about this solution please head over to https://cookieconsent.insites.com/
+            enable = 0
+        }
+        googleFont {
+            enable = 0
+        }
+        meta {
+            enable = 1
+            navigationValue = 91, 92, 93
+        }
+    }
+}
+
+##############
+### CONFIG ###
+##############
+config {
+    headerComment = Diese Seite wurde von Werbeagentur netzpepper konzipiert und erstellt. Besuchen Sie uns unter https://www.werbeagentur-netzpepper.de
+}
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    settings {
+        # cat=bootstrap package: css parser/190/100; type=boolean; label=Override Parser Variables: If enabled the variables defined in your LESS/Scss files will be overridden with the ones defined as TypoScript Constants.
+        overrideParserVariables = 0
+    }
+}

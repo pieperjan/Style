@@ -1,0 +1,43 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        basic = EXT:npt3basic/Resources/Public/Scss/basic.scss
+    }
+    10 {
+        templateRootPaths {
+            100 = EXT:npt3basic/Resources/Private/Templates/Page/
+            110 = EXT:npt3theme/Resources/Private/Templates/Page/
+        }
+        partialRootPaths {
+            100 = EXT:npt3basic/Resources/Private/Partials/Page/
+            110 = EXT:npt3theme/Resources/Private/Partials/Page/
+        }
+        layoutRootPaths {
+            100 = EXT:npt3basic/Resources/Private/Layouts/Page/
+            110 = EXT:npt3theme/Resources/Private/Layouts/Page/
+        }
+    }
+}
+
+lib.contentElement {
+    templateRootPaths {
+        100 = EXT:npt3basic/Resources/Private/Templates/ContentElements/
+        110 = EXT:npt3theme/Resources/Private/Templates/ContentElements/
+    }
+    partialRootPaths {
+        100 = EXT:npt3basic/Resources/Private/Partials/ContentElements/
+        110 = EXT:npt3theme/Resources/Private/Partials/ContentElements/
+    }
+    layoutRootPaths {
+        100 = EXT:npt3basic/Resources/Private/Layouts/ContentElements/
+        110 = EXT:npt3theme/Resources/Private/Layouts/ContentElements/
+    }
+}

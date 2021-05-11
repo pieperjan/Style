@@ -1,0 +1,23 @@
+TCEFORM {
+tt_content {
+  layout {
+    types {
+     card_group {
+          addItems {
+              100 = masonry
+          }
+          altLabels {
+              100 = Masonry
+          }
+      }
+    }
+  }
+}
+  tx_bootstrappackage_card_group_item {
+        card_layout {
+            addItems {
+                default = Default
+            }
+        }
+    }    
+}

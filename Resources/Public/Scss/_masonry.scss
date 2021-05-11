@@ -1,0 +1,27 @@
+.masonry-section {
+  display: grid;
+  grid-auto-rows: 1fr;
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+  // Masonry Teaser
+  &.masonry-4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &.masonry-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  // Masonry Newsteaser
+  &.masonry-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.masonry-item {
+  &.masonry-item-1-1, &.masonry-item-1-2 {
+    grid-column: span 1;
+  }
+  &.masonry-item-2-1, &.masonry-item-2-2 {
+    grid-column: span 2;
+  }
+}
