@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = array(
     'createDirs' => '',
     'modify_tables' => '',
     'clearCacheOnLoad' => true,
-    'version' => '10.0.26',
+    'version' => '10.0.01',
     array(
         'depends' =>
             array(
