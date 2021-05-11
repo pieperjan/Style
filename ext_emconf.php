@@ -4,12 +4,12 @@
  * Extension Manager/Repository config file for ext "npt3pme".
  */
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Netzpepper Basic',
+    'title' => 'JustWebsite Fundament',
     'description' => '',
     'category' => 'templates',
     'author' => 'Jan Pieper',
-    'author_email' => 'jpieper@netzpepper.de',
-    'author_company' => 'netzpepper',
+    'author_email' => 'hallo@pieperjan.de',
+    'author_company' => 'justwebsite',
     'state' => 'stable',
     'internal' => '',
     'uploadfolder' => '0',
