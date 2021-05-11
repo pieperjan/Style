@@ -1,4 +1,4 @@
-Sitepackage for the project "npt3basic"
+Sitepackage for the project "justwebsite-fundament"
 ==============================================================
 
 Die **npt3basic** liefert wichtige grundsätzliche Konfigurationen für TYPO3 und das Introduction Package.
